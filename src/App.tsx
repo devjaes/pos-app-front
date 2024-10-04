@@ -1,12 +1,14 @@
-import './App.css';
-import { PrimeReactProvider } from 'primereact/api';
+import './App.css'
+import { PrimeReactProvider } from 'primereact/api'
+import { Dashboard } from './features/dashboard/components/dashboard'
 
 function App() {
+  const value = { locale: 'es' }
   return (
-    <PrimeReactProvider>
-      <h1>App</h1>
+    <PrimeReactProvider value={value}>
+      <Dashboard />
     </PrimeReactProvider>
-  );
+  )
 }
 
-export default App;
+export default App
