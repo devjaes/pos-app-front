@@ -11,9 +11,9 @@ import { BlockUI } from 'primereact/blockui'
 import { THEMES } from '../../../core/contants/themes'
 import { ElementType } from '../../../core/types/element-type'
 
-export const Dashboard = () => {
+export const ThemePicker = () => {
   const { handleThemeChange } = UseChangeTheme()
-  const [theme, setTheme] = useState<ElementType<typeof THEMES>>(THEMES[0])
+  const [theme, setTheme] = useState<ElementType<typeof THEMES>>('viva-dark')
   const [blocked, setBlocked] = useState(false)
   const renderThemeList = () => {
     return (

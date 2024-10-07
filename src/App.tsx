@@ -1,11 +1,11 @@
 import './App.css'
-import { PrimeReactProvider } from 'primereact/api'
-import { Dashboard } from './features/dashboard/components/dashboard'
+import { locale, PrimeReactProvider } from 'primereact/api'
+import { Dashboard } from './presentation/dashboard/components/dashboard'
 
 function App() {
-  const value = { locale: 'es' }
+  locale('es')
   return (
-    <PrimeReactProvider value={value}>
+    <PrimeReactProvider>
       <Dashboard />
     </PrimeReactProvider>
   )

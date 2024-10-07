@@ -12,7 +12,6 @@ export const UseChangeTheme = () => {
       if (!link) {
         return
       }
-      console.log('link.href', link.href)
       const themePath = './themes/' + newTheme + '/theme.css'
       link.href = themePath
     },
