@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-jair {
+    background-color: #2a323d;
+}
+
+.bg-jair-black {
+    background-color: #20262e;
+}
+
+:root {
+    padding: 0;
+    margin: 0;
+}
 /* :root { */
 /*   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 /*   line-height: 1.5; */
@@ -5,7 +21,7 @@
 /**/
 /*   color-scheme: light dark; */
 /*   color: rgba(255, 255, 255, 0.87); */
-/*   /* background-color: #242424; */ */
+/*   /* background-color: #242424; */ 
 /**/
 /*   font-synthesis: none; */
 /*   text-rendering: optimizeLegibility; */

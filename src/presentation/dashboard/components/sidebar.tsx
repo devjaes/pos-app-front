@@ -10,11 +10,9 @@ export const PageSidebar = () => {
         visible={visible}
         onHide={() => setVisible(false)}
         modal={false}
-        content={null}
-        ariaCloseLabel="close"
         dismissable={false}
         header={<h2>Sidebar</h2>}
-        maskClassName="mask"
+        baseZIndex={-1000}
         ptOptions={{ mergeSections: true }}
       >
         <h2>Sidebar</h2>

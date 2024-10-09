@@ -8,8 +8,8 @@ import { Tag } from 'primereact/tag'
 import { Ripple } from 'primereact/ripple'
 import { Chip } from 'primereact/chip'
 import { BlockUI } from 'primereact/blockui'
-import { THEMES } from '../../../core/contants/themes'
-import { ElementType } from '../../../core/types/element-type'
+import { ElementType } from '@/core/types/element-type'
+import { THEMES } from '@/core/contants/themes'
 
 export const ThemePicker = () => {
   const { handleThemeChange } = UseChangeTheme()
