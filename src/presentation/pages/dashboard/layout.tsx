@@ -1,12 +1,10 @@
 import { Image } from 'primereact/image'
 import { MenuItem } from 'primereact/menuitem'
 import { PanelMenu } from 'primereact/panelmenu'
+import { Outlet } from 'react-router'
 
-export default function AdminLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function AdminLayout(
+) {
   const items: MenuItem[] = [
     {
       label: 'Productos',
@@ -66,9 +64,9 @@ export default function AdminLayout({
   ]
 
   return (
-    <div className="flex w-full h-full -m-8">
-      <div className="min-h-screen bg-jair">
-        <div className="h-full ">
+    <div className="grid grid-cols-4 w-screen h-screen self-center -m-8">
+      <div className="col-span-1 max-w-72 min-h-screen bg-jair">
+        <div className="w-full h-full ">
           <div className="flex justify-center items-center">
             <Image
               src={'/images/PostLogo5.png'}
@@ -80,12 +78,12 @@ export default function AdminLayout({
           </div>
           <PanelMenu
             model={items}
-            className="w-52 md:w-25rem mb-4 bg-gray-700"
+            className="w-full md:w-25rem mb-4 bg-gray-700 justify-center flex flex-col self-center"
           />
         </div>
       </div>
-      <div className="flex justify-center items-center w-11/12 bg-slate-600">
-        {children}
+      <div className="col-span-3 justify-center items-center w-full bg-slate-600">
+        {<Outlet/>}
       </div>
     </div>
   )
