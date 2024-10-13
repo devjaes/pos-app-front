@@ -9,7 +9,7 @@ function App() {
 
   return (
     <PrimeReactProvider>
-      <AppRoutes isAuthorized={true} />
+      <Outlet />
     </PrimeReactProvider>
   )
 }
