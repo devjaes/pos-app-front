@@ -3,8 +3,7 @@ import { MenuItem } from 'primereact/menuitem'
 import { PanelMenu } from 'primereact/panelmenu'
 import { Outlet } from 'react-router'
 
-export default function AdminLayout(
-) {
+export default function AdminLayout() {
   const items: MenuItem[] = [
     {
       label: 'Productos',
@@ -64,8 +63,8 @@ export default function AdminLayout(
   ]
 
   return (
-    <div className="grid grid-cols-4 w-screen h-screen self-center -m-8">
-      <div className="col-span-1 max-w-72 min-h-screen bg-jair">
+    <div className="grid grid-cols-12 w-screen h-screen self-center ">
+      <div className="col-span-2  min-h-screen bg-jair">
         <div className="w-full h-full ">
           <div className="flex justify-center items-center">
             <Image
@@ -82,8 +81,8 @@ export default function AdminLayout(
           />
         </div>
       </div>
-      <div className="col-span-3 justify-center items-center w-full bg-slate-600">
-        {<Outlet/>}
+      <div className="col-span-10 justify-center items-center w-full bg-slate-600">
+        {<Outlet />}
       </div>
     </div>
   )

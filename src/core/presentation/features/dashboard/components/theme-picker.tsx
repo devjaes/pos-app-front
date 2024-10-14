@@ -1,5 +1,4 @@
 import { Button } from 'primereact/button'
-import { UseChangeTheme } from '../../../core/hooks/change-theme'
 import { ListBox } from 'primereact/listbox'
 import { useEffect, useState } from 'react'
 import { Panel } from 'primereact/panel'
@@ -10,6 +9,7 @@ import { Chip } from 'primereact/chip'
 import { BlockUI } from 'primereact/blockui'
 import { ElementType } from '@/core/types/element-type'
 import { THEMES } from '@/core/contants/themes'
+import { UseChangeTheme } from '@/core/hooks/change-theme'
 
 export const ThemePicker = () => {
   const { handleThemeChange } = UseChangeTheme()

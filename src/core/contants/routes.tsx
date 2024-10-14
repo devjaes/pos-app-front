@@ -1,13 +1,13 @@
-import AdminLayout from '@/presentation/pages/dashboard/layout'
+import AdminLayout from '@/core/pages/dashboard/layout'
 import { ILayoutRoute } from '../interfaces/routes'
 
 //Layouts
-import HomeLayout from '@/presentation/pages/home/layout'
+import HomeLayout from '@/core/pages/home/layout'
 
 //Pages
-import HomePage from '@/presentation/pages/home/page'
-import DashboardPage from '@/presentation/pages/dashboard/page'
-import { ThemePicker } from '@/presentation/dashboard/components/theme-picker'
+import HomePage from '@/core/pages/home/page'
+import DashboardPage from '@/core/pages/dashboard/page'
+import { ThemePicker } from '../presentation/features/dashboard/components/theme-picker'
 
 export const routes: ILayoutRoute[] = [
   {
